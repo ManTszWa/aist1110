@@ -122,16 +122,14 @@ class BallWorldEnv(gym.Env):
 
 
         terminated = self.player.live == 0
-        reward = 1
         observation = self._get_obs()
+        reward = observation[2] + -observation[3]
         info = self._get_info()
 
         if self.render_mode == "human":
             self._render_frame()
 
-        for enemy in self.enemy:
-            print(enemy.speedmultiplier, end=' ')
-        print()
+        
 
         return observation, reward, terminated, False, info
 
