@@ -1,0 +1,8 @@
+setup.py
+gamecode/__init__.py
+gamecode/envs/__init__.py
+gamecode/envs/actualgame.py
+idk.egg-info/PKG-INFO
+idk.egg-info/SOURCES.txt
+idk.egg-info/dependency_links.txt
+idk.egg-info/top_level.txt
